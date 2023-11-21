@@ -1,21 +1,21 @@
+/* Resetting default styles and setting the overall appearance */
 body {
     margin: 0;
-    padding: 0;   
+    padding: 0;
     background-color: #c7c1c1;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    
 }
 
-header{
+/* Styling for the header section */
+header {
     width: 100%;
     height: 30vh;
     text-align: center;
-    
 }
 
-
-section{
+/* Styling for the main content section */
+section {
     width: 60%;
     height: 50vh;
     margin-left: 20%;
@@ -23,47 +23,51 @@ section{
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-   
 }
 
-h2{
+/* Centering text within h2 tags */
+h2 {
     text-align: center;
 }
 
-table{
+/* Styling for tables */
+table {
     width: 80%;
-    margin-left: 10%;    
+    margin-left: 10%;
 }
 
-img{
+/* Making images responsive */
+img {
     max-width: 100%;
 }
 
-input{
+/* Styling for input fields */
+input {
     width: 90%;
     height: 40px;
     background-color: #c0bcbc;
     border: 1px solid rgb(218, 215, 215);
-
 }
 
-select{
+/* Styling for select dropdowns */
+select {
     width: 100%;
     height: 43px;
-    margin-left: -15px ;
+    margin-left: -15px;
     background-color: #c0bcbc;
 }
-p{
+
+/* Styling for paragraphs */
+p {
     width: 90%;
     height: 40px;
     border: 1px solid rgb(218, 215, 215);
     background-color: #c0bcbc;
 }
 
+/* Styling for buttons */
 button {
-    background-color: #4caf50;
-    color: #fff;
+    background-color: #c0bcbc;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -71,8 +75,27 @@ button {
     float: right;
     margin-right: 15%;
 }
-footer{
-    width: 100%;
+
+/* Styling for the footer */
+footer {
+    width: 90%;
     height: 20vh;
-    
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Media queries for tablet screens */
+@media screen and (max-width: 768px) {
+    section {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 480px) {
+    section {
+        width: 95%;
+        margin-left: 2.5%;
+    }
 }

@@ -2,43 +2,59 @@
 <html lang="en">
 
 <head>
+    <!-- character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet for styling -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript file conversion -->
     <script src="script.js"></script>
-    <title>Currency Converter</title>
+     <title>Currency Converter</title>
 </head>
 
 <body>
+    <!-- Header section  -->
     <header>
         <h1>US Dollar to Canadian Dollar</h1>
-        <h3> Convert USD to CAD at the real exchange rate</h3>
-
+        <h3>Convert USD to CAD at the real exchange rate</h3>
     </header>
-    <section>
 
+    <!-- Main section for the currency converter -->
+    <section>
+        
         <h2>Currency Converter</h2>
-        <table >
+
+    
+        <table>
+           
             <tr>
                 <td colspan="2"><label for="amount">Amount</label></td>
-                <td>
+                <td></td>
                 <td>Converted To</td>
             </tr>
 
+            
             <tr>
-                <td width="38%"> <input type="number" id="amount" placeholder="Enter amount"></td>
+                <!-- Input field for amount -->
+                <td width="38%"><input type="number" id="amount" placeholder="Enter amount"></td>
+
+              
                 <td width="9%">
                     <select id="fromCurrency">
-                        <option value="CAD">CAD </option>
-                        <option value="USD">USD </option>
+                        <option value="CAD">CAD</option>
+                        <option value="USD">USD</option>
                     </select>
                 </td>
-                <td width="6%">
-                    <img src="images/arrow.jpg" alt="">
-                </td>
-                <td width="38%">
-                    <p id="result"></p>
-                </td>
+
+               
+                <td width="6%"><img src="images/arrow.jpg" alt=""></td>
+
+                <!-- Displaying the converted result -->
+                <td width="38%"><p id="result"></p></td>
+
+                <!-- Dropdown for selecting 'To' currency -->
                 <td width="9%">
                     <select id="toCurrency">
                         <option value="CAD">CAD</option>
@@ -47,17 +63,15 @@
                 </td>
             </tr>
         </table>
+
+        <!-- Button to call currency conversion -->
         <button onclick="convertCurrency()">Convert</button>
-
-    
-
     </section>
 
+    <!-- Footer section  -->
     <footer>
-
+        <text>&copy; ALL Right reserved</text>
     </footer>
-
-
 </body>
 
 </html>

@@ -56,5 +56,5 @@ function convertCurrency() {
     }
 
     // Display the result with up to 3 digits after the decimal point
-    resultParagraph.textContent = `${result.toFixed(3)}`;
+    resultParagraph.textContent = `${result.toFixed(2)}`;
 }
