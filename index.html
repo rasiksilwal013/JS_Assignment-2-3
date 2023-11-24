@@ -11,7 +11,7 @@
 
     <!-- External JavaScript file conversion -->
     <script src="js/script.js"></script>
-     <title>Currency Converter</title>
+    <title>Currency Converter</title>
 </head>
 
 <body>
@@ -23,36 +23,39 @@
 
     <!-- Main section for the currency converter -->
     <section>
-        
+
         <h2>Currency Converter</h2>
 
-    
+
         <table>
-           
+
             <tr>
                 <td colspan="2"><label for="amount">Amount</label></td>
                 <td></td>
                 <td>Converted To</td>
             </tr>
 
-            
+
             <tr>
                 <!-- Input field for amount -->
                 <td width="38%"><input type="number" id="amount" placeholder="Enter amount"></td>
 
-              
+
                 <td width="9%">
                     <select id="fromCurrency">
-                        <option value="CAD">CAD</option>
                         <option value="USD">USD</option>
+                        <option value="CAD">CAD</option>
+
                     </select>
                 </td>
 
-               
+
                 <td width="6%"><img src="images/arrow.jpg" alt=""></td>
 
                 <!-- Displaying the converted result -->
-                <td width="38%"><p id="result"></p></td>
+                <td width="38%">
+                    <p id="result"></p>
+                </td>
 
                 <!-- Dropdown for selecting 'To' currency -->
                 <td width="9%">
